@@ -1,8 +1,8 @@
 ---
 applications:
 - name: nodeJSPortalSACEmbedded
-  memory: 128M
-  storage: 128M
+  memory: 64M
+  storage: 64M
   instances: 1
   command: node server.js
   buildpacks: 
