@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>SAC Embedded in a Node.js Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body style="margin:0px;padding:0px;overflow:hidden">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+    <div class="w3-bar w3-white w3-card">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <img src="https://www.sap.com/dam/application/shared/logos/sap-logo-svg.svg.adapt.svg/1493030643828.svg" style="height:30px;margin:5px;align-content:center">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#solutionsinvolved" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SOLUTIONS INVOLVED</a>
+        <a href="#industries" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INDUSTRIES</a>
+        <a href="#SAC" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SAC</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+            <a href="#" class="w3-bar-item w3-button">Extras</a>
+            <a href="#" class="w3-bar-item w3-button">Media</a>
+        </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="https://www.sap.com/dam/application/imagelibrary/photos/286000/286932.jpg/_jcr_content/renditions/286932_homepage_3840_1200.jpg.adapt.1920_600.true.false.false.false.jpg/1591934413507.jpg" style="width:100%">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h3>The Best Run SAP</h3>
+        <p><b>See yourself the latest analytics!</b></p>   
+        </div>
+    </div>
+
+    <!-- The Solution Section -->
+    <div class="w3-container w3-content w3-center w3-padding    ng-64" style="max-width:800px" id="solutionsinvolved">
+        <h2 class="w3-wide">SOLUTIONS INVOLVED</h2>
+        <p class="w3-opacity"><i>Learn some of the solutions involved in this demo!</i></p>
+        <p class="w3-justify">SAP Analytics Cloud is being embedded in this portal based on a Node.js framework and at the same time being deployed on SAP Cloud Platform, Cloud Foundry Environment! + You can also integrate Intelligent Technologies such as SAP Conversational AI to this portal to better engage with your audience!</p>
+        <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+            <p>SAP Analytics Cloud</p>
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/282000/282693.jpg/_jcr_content/renditions/282693_photo_3840_2160.jpg.adapt.568_319.false.false.false.false.jpg/1509728624211.jpg" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <p>Application Development</p>
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/283000/283535.jpg/_jcr_content/renditions/283535_photo_3840_2160.jpg.adapt.568_319.false.false.false.false.jpg/1552497077950.jpg" alt="Random Name" style="width:60%">
+        </div>
+        <div class="w3-third">
+            <p>Intelligent Technologies</p>
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/286000/286407.jpg/_jcr_content/renditions/286407_photo_3840_2160.jpg.adapt.568_319.false.false.false.false.jpg/1584379230778.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+        </div>
+    </div>
+
+    <!-- The Industries Section -->
+    <div class="w3-amber" id="industries">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">INDUSTRIES</h2>
+        <p class="w3-opacity w3-center"><i>Know a little bit more about the industries we serve!</i></p><br>
+
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/284000/284207.jpg/_jcr_content/renditions/284207_photo_3198_1044.jpg.adapt.1599_522.false.false.false.false.height.jpg/1584110940323.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Retail</b></p>
+                <p class="w3-opacity">Fashion & Groceries</p>
+                <button class="w3-button w3-black w3-margin-bottom">Know more!</button>
+            </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/277000/277187.jpg/_jcr_content/renditions/277187_photo_3198_1044.jpg.adapt.1599_522.false.false.false.false.height.jpg/1584734409635.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Consumer Goods</b></p>
+                <p class="w3-opacity">Personal Care and Food</p>
+                <button class="w3-button w3-black w3-margin-bottom">Know more!</button>
+            </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/283000/283072.jpg/_jcr_content/renditions/283072_photo_3198_1044.jpg.adapt.1599_522.false.false.false.false.height.jpg/1584376610186.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Financial Services</b></p>
+                <p class="w3-opacity">Banks & Insurance</p>
+                <button class="w3-button w3-black w3-margin-bottom">Know more!</button>
+            </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/278000/278143.jpg/_jcr_content/renditions/278143_photo_3198_1044.jpg.adapt.1599_522.false.false.false.false.height.jpg/1586187316968.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Service Industries</b></p>
+                <p class="w3-opacity">Logistics & Media</p>
+                <button class="w3-button w3-black w3-margin-bottom">Know more!</button>
+            </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/279000/279172.jpg/_jcr_content/renditions/279172_photo_3198_1044.jpg.adapt.1599_522.false.false.false.false.height.jpg/1584389552690.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Discrete Industries</b></p>
+                <p class="w3-opacity">Automotive & High Tech</p>
+                <button class="w3-button w3-black w3-margin-bottom">Know more!</button>
+            </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+            <img src="https://www.sap.com/dam/application/imagelibrary/photos/277000/277410.jpg/_jcr_content/renditions/277410_photo_3198_1044.jpg.adapt.1599_522.false.false.false.false.height.jpg/1586259416471.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Public Services</b></p>
+                <p class="w3-opacity">Healthcare & Public Sector</p>
+                <button class="w3-button w3-black w3-margin-bottom">Know more!</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- The SAC Section -->
+    <div class="w3-white" id="SAC">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:100%">
+        <h2 class="w3-wide w3-center">SAP ANALYTICS CLOUD</h2>
+        <p class="w3-opacity w3-center"><i>Check out some of the latest analytics!</i></p><br>
+        <iframe id="attachframe" src="https://<TENANT>/sap/fpa/ui/tenants/<TENANT_ID>/bo/story/<STORY_ID>?page=2" frameborder="0" style="overflow:hidden;height:1200px;width:100%"></iframe>
+        </div>
+    </div>
+    
+    <!-- End Page Content -->
+    </div>
+
+    <!-- Footer Image -->
+    <img src="https://www.sap.com/dam/application/imagelibrary/photos/286000/286931.jpg/_jcr_content/renditions/286931_homepage_3840_1200.jpg.adapt.1920_600.false.false.false.false.jpg/1591934527617.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.sap.com/latinamerica/index.html" target="_blank">SAP Presales Mexico</a></p>
+    </footer>
+
+    <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+    }
+    </script>
+
+    </body>
+</html>
